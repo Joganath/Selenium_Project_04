@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test  name="Cruise">
+    <classes>
+      <class name="com.OnlineTravel.Cruise_Travel"/>
+     </classes>
+    </test> <!-- Test -->
+   <test name= "Flight">
+   <classes>
+   <class name= "com.OnlineTravel.Yatra_Auomation_01"/>
+   </classes>
+   </test>
+   <test name= "Train">
+    <classes>
+      <class name = "com.OnlineTravel.Train"/>
+    </classes>
+   </test>
+   
+   
+   
+   
+   
+    
+</suite> <!-- Suite -->

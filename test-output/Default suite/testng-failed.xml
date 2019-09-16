@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.OnlineTravel.Cruise_Travel">
+        <methods>
+          <include name="Cruise_Travel"/>
+          <include name="Singapore_malaysia"/>
+          <include name="Opening_Page"/>
+        </methods>
+      </class> <!-- com.OnlineTravel.Cruise_Travel -->
+      <class name="com.OnlineTravel.Yatra_Auomation_01">
+        <methods>
+          <include name="Opening_Page"/>
+          <include name="Browser_Close"/>
+          <include name="Flight_Count"/>
+        </methods>
+      </class> <!-- com.OnlineTravel.Yatra_Auomation_01 -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
