@@ -2,6 +2,7 @@ package com.OnlineTravel;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.AfterTest;
@@ -17,7 +18,7 @@ public void Opening_Page() throws IOException
 {
 	driver=initializeDriver();
 	driver.get(Prop.getProperty("Url"));
-	driver.manage().window().maximize();
+	//driver.manage().window().maximize();
 	
 
 }
@@ -29,18 +30,27 @@ public void Closing_Page()
    driver=null;
 }*/
 
-@Test(enabled=false)
+@Test
 public void Train_Travel() throws InterruptedException
 {
 	Home_Page HP = new Home_Page(driver);
-	/*WebElement Next_Button = HP.Next_Button_Click();
-	System.out.println(Next_Button.getTagName());
-	Wait=Add_Wait();
-	Wait.until*/
-	Thread.sleep(2000);
-    //HP.Next_Button_Click().click();
-    HP.Train_Click().click();
+    Wait=Add_Wait();
+	Wait.until(ExpectedConditions.elementToBeClickable(HP.Train_Click()));
+	//Thread.sleep(2000);
+    Action = Add_Action();
+    //Action.moveToElement(Next_Button).click().perform();
+    System.out.println(HP.Train_Click().isEnabled());
+	HP.Train_Click().click();
+    driver.manage().window().maximize();
+	Wait.until(ExpectedConditions.elementToBeClickable(HP.Train_Origin()));
     HP.Train_Origin().click();
+    HP.Train_Origin().sendKeys("SBC");
+    Wait.until(ExpectedConditions.textToBePresentInElement(HP.Station_Code(), "SBC"));
+    Action.sendKeys(Keys.ENTER).perform();
+    HP.Destination_Selection().click();
+    HP.Destination_Selection().sendKeys("BBS");
+    Wait.until(ExpectedConditions.textToBePresentInElement(HP.Station_Code(),"BBS"));
+    Action.sendKeys(Keys.ENTER).perform();
 }
 
 }

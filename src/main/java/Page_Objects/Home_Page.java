@@ -29,11 +29,11 @@ public class Home_Page {
 	By Singapore_Cruise_Price = By.cssSelector("span[class='price ng-binding']");
 	
 	//Train
-	By NextButton = By.xpath("//span[@class='listTransformBtn buttonNext']");
-	By Train_Button = By.cssSelector("span[class='demo-icon icon-trains']");
+	By NextButton = By.xpath("//div[@class='be-container-snipe']/div/div/span");
+	By Train_Button = By.cssSelector("a[id='booking_engine_trains']");
 	By Train_Origin = By.cssSelector("input[id='BE_train_from_station']");
-	
-	
+	By Station_Code = By.xpath("//li[@class='active ac_over']/span[3]");
+	By Destination_Station = By.cssSelector("input[name='train_to_station']");
 	
 	//Flight
 	public Home_Page(WebDriver driver)
@@ -140,6 +140,16 @@ public class Home_Page {
   public WebElement Train_Origin() 
   {
 	  return driver.findElement(Train_Origin);
+  }
+
+  public WebElement Station_Code() {
+	  return driver.findElement(Station_Code);
+  
+  }
+
+  public WebElement Destination_Selection() 
+  {
+	  return driver.findElement(Destination_Station);
   }
 
 }
