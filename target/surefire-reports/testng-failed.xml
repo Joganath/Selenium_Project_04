@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.OnlineTravel.Listener"/>
+  </listeners>
   <test name="Cruise(failed)">
     <classes>
+      <class name="com.OnlineTravel.Train">
+        <methods>
+          <include name="Opening_Page"/>
+        </methods>
+      </class> <!-- com.OnlineTravel.Train -->
+      <class name="com.OnlineTravel.Yatra_Auomation_01">
+        <methods>
+          <include name="Opening_Page"/>
+          <include name="Browser_Close"/>
+        </methods>
+      </class> <!-- com.OnlineTravel.Yatra_Auomation_01 -->
       <class name="com.OnlineTravel.Cruise_Travel">
         <methods>
           <include name="Cruise_Travel"/>
@@ -11,8 +25,13 @@
           <include name="Closing_Browser"/>
         </methods>
       </class> <!-- com.OnlineTravel.Cruise_Travel -->
+    </classes>
+  </test> <!-- Cruise(failed) -->
+  <test name="Train(failed)">
+    <classes>
       <class name="com.OnlineTravel.Train">
         <methods>
+          <include name="Train_Travel"/>
           <include name="Opening_Page"/>
         </methods>
       </class> <!-- com.OnlineTravel.Train -->
@@ -22,28 +41,12 @@
           <include name="Browser_Close"/>
         </methods>
       </class> <!-- com.OnlineTravel.Yatra_Auomation_01 -->
-    </classes>
-  </test> <!-- Cruise(failed) -->
-  <test name="Flight(failed)">
-    <classes>
       <class name="com.OnlineTravel.Cruise_Travel">
         <methods>
           <include name="Opening_Page"/>
           <include name="Closing_Browser"/>
         </methods>
       </class> <!-- com.OnlineTravel.Cruise_Travel -->
-      <class name="com.OnlineTravel.Train">
-        <methods>
-          <include name="Opening_Page"/>
-        </methods>
-      </class> <!-- com.OnlineTravel.Train -->
-      <class name="com.OnlineTravel.Yatra_Auomation_01">
-        <methods>
-          <include name="Opening_Page"/>
-          <include name="Browser_Close"/>
-          <include name="Flight_Count"/>
-        </methods>
-      </class> <!-- com.OnlineTravel.Yatra_Auomation_01 -->
     </classes>
-  </test> <!-- Flight(failed) -->
+  </test> <!-- Train(failed) -->
 </suite> <!-- Failed suite [Suite] -->

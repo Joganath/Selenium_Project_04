@@ -1,10 +1,16 @@
 package com.OnlineTravel;
 
+
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -15,17 +21,17 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeSuite;
+import java.util.Date;
 
 public class Driver {
 
-	public WebDriver  driver= null;
+	public static WebDriver  driver;
 	public Properties Prop=null;
 	public Actions Action = null;
 	public WebDriverWait Wait = null;  
 	public FluentWait FW_Wait=null;
 	
 	
-			
 	
     public WebDriver initializeDriver() throws IOException
     {
@@ -76,5 +82,28 @@ public class Driver {
     	return Action;
     	
     }
+
+  public void getScreenshot(String result) throws IOException
+  {
+	//driver=initializeDriver();
+	  if (driver.equals(null))
+	{
+		System.out.println("Driver is null");
+	}
+	else
+	{
+			System.out.println("Driver is not null");
+	}
+	  Date Dt = new Date();
+	  SimpleDateFormat Formatter = new SimpleDateFormat("yyyy-MM-dd");
+	  String StrDT= Formatter.format(Dt);
+	  
+	  
+	  System.out.println("Today is"+StrDT);
+	  
+	  File Scrn = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+    FileUtils.copyFile(Scrn,new File("D:\\Selenium_Automation\\Screenshots\\"+result+StrDT+"Screenshot.jpeg"));
+    
+  }
 
 }

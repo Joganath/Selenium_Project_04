@@ -1,7 +1,9 @@
 package com.OnlineTravel;
 
 import java.io.IOException;
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -13,11 +15,15 @@ import Page_Objects.Home_Page;
 public class Cruise_Travel extends com.OnlineTravel.Driver {
 
 	
+	private static  Logger log = LogManager.getLogger(Cruise_Travel.class.getName());
+	
 	@BeforeTest
 	public void Opening_Page() throws IOException  
 	{
 	   driver = initializeDriver();
+	   log.info("Driver is initialized");
 	   driver.get(Prop.getProperty("Url"));
+	   log.error("Webpage is launched");
 	   driver.manage().window().maximize();
 	   
 	   
@@ -42,7 +48,7 @@ public void Cruise_Travel()
 	Wait.until(ExpectedConditions.elementToBeClickable(HP.River_Selector()));
 	Wait.until(ExpectedConditions.elementToBeClickable(HP.Singapore_Malaysia_Cruise()));
 	String Heading = HP.Main_Heading().getText();
-	Assert.assertEquals(Heading, "Cruise Online Booking","Header is not correct");
+	Assert.assertEquals(Heading, "Cruise Offline Booking");
     
 	
 }
@@ -65,6 +71,7 @@ public void Singapore_malaysia() throws InterruptedException
 		int Amnt=(Integer)Amount;
 		
 		Assert.assertEquals(Amnt, 21000);
+	    log.info("PLease check the Price");
 	}
 	else
 	{

@@ -3,12 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.OnlineTravel.Train">
+      <class name="com.OnlineTravel.Cruise_Travel">
         <methods>
-          <include name="Train_Travel"/>
+          <include name="Cruise_Travel"/>
+          <include name="Singapore_malaysia"/>
           <include name="Opening_Page"/>
+          <include name="Closing_Browser"/>
         </methods>
-      </class> <!-- com.OnlineTravel.Train -->
+      </class> <!-- com.OnlineTravel.Cruise_Travel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

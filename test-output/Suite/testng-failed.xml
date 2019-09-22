@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.OnlineTravel.Listener"/>
+  </listeners>
   <test thread-count="5" name="Cruise(failed)">
     <classes>
       <class name="com.OnlineTravel.Cruise_Travel">
@@ -13,14 +16,4 @@
       </class> <!-- com.OnlineTravel.Cruise_Travel -->
     </classes>
   </test> <!-- Cruise(failed) -->
-  <test thread-count="5" name="Train(failed)">
-    <classes>
-      <class name="com.OnlineTravel.Train">
-        <methods>
-          <include name="Train_Travel"/>
-          <include name="Opening_Page"/>
-        </methods>
-      </class> <!-- com.OnlineTravel.Train -->
-    </classes>
-  </test> <!-- Train(failed) -->
 </suite> <!-- Failed suite [Suite] -->

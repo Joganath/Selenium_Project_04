@@ -31,50 +31,54 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Cruise</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">46.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="stripe"><td style="text-align:left;padding-right:2em">Flight</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">34.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr><td style="text-align:left;padding-right:2em">Train</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">19.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Cruise</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi_attn">1</td><td class="numi">30.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Flight</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">40.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Train</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">34.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 <tr class="total"><td>Total</td>
-<td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">101.0 seconds</td><td colspan="2">&nbsp;</td></tr>
+<td class="numi">1</td><td class="numi">1</td><td class="numi_attn">1</td><td class="numi_attn">2</td><td class="numi">105.0 seconds</td><td colspan="2">&nbsp;</td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
 <tr><th colspan="4">Cruise &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">com.OnlineTravel.Cruise_Travel</td><td><a href="#m1"><b>Singapore_malaysia</b>  </a></td><td class="numi">1</td><td>1568689370275</td><td class="numi">16722</td></tr>
-<tr><th colspan="4">Cruise &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">com.OnlineTravel.Cruise_Travel</td><td><a href="#m2"><b>Cruise_Travel</b>  </a></td><td class="numi">1</td><td>1568689368447</td><td class="numi">1822</td></tr>
-<tr><th colspan="4">Flight &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">com.OnlineTravel.Yatra_Auomation_01</td><td><a href="#m3"><b>Flight_Count</b>  </a></td><td class="numi">1</td><td>1568689410623</td><td class="numi">11209</td></tr>
+<tr class="failedodd"><td rowspan="1">com.OnlineTravel.Cruise_Travel</td><td><a href="#m1"><b>Cruise_Travel</b>  </a></td><td class="numi">1</td><td>1569166552064</td><td class="numi">1656</td></tr>
+<tr><th colspan="4">Cruise &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">com.OnlineTravel.Cruise_Travel</td><td><a href="#m2"><b>Singapore_malaysia</b>  </a></td><td class="numi">1</td><td>1569166554211</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Flight &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">com.OnlineTravel.Yatra_Auomation_01</td><td><a href="#m3"><b>Flight_Count</b>  </a></td><td class="numi">1</td><td>1569166579945</td><td class="numi">18493</td></tr>
+<tr><th colspan="4">Train &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.OnlineTravel.Train</td><td><a href="#m4"><b>Train_Travel</b>  </a></td><td class="numi">1</td><td>1569166614537</td><td class="numi">17599</td></tr>
 </table>
 <h1>Cruise</h1>
-<h2 id="m1">com.OnlineTravel.Cruise_Travel:Singapore_malaysia</h2>
+<h2 id="m1">com.OnlineTravel.Cruise_Travel:Cruise_Travel</h2>
 <div style="padding-left:3em">
-<p>expected [21000] but found [20000]</p>
+<p>expected [Cruise Offline Booking] but found [Cruise Online Booking]</p>
 org.testng.Assert.fail(Assert.java:94)
 <br/>at org.testng.Assert.failNotEquals(Assert.java:494)
 <br/>at org.testng.Assert.assertEquals(Assert.java:123)
-<br/>at org.testng.Assert.assertEquals(Assert.java:370)
-<br/>at org.testng.Assert.assertEquals(Assert.java:380)
-<br/>at com.OnlineTravel.Cruise_Travel.Singapore_malaysia(Cruise_Travel.java:67)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at com.OnlineTravel.Cruise_Travel.Cruise_Travel(Cruise_Travel.java:51)
 <br/>29 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">com.OnlineTravel.Cruise_Travel:Cruise_Travel</h2>
+<h2 id="m2">com.OnlineTravel.Cruise_Travel:Singapore_malaysia</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h1>Flight</h1>
 <h2 id="m3">com.OnlineTravel.Yatra_Auomation_01:Flight_Count</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Train</h1>
+<h2 id="m4">com.OnlineTravel.Train:Train_Travel</h2>
 <div style="padding-left:3em">
-<p>Expected condition failed: waiting for text (&apos;Kempegowda International&apos;) to be present in element [[ChromeDriver: chrome on XP (d559f604113bae34d5199d31f5a55476)] -&gt; xpath: //*[text()=&apos;Indira Gandhi International&apos;]] (tried for 10 second(s) with 500 milliseconds interval)
+<p>Expected condition failed: waiting for text (&apos;BBS&apos;) to be present in element [[ChromeDriver: chrome on XP (4abac421b63a1f3bc9e3f6d891bee778)] -&gt; xpath: //li[@class=&apos;active ac_over&apos;]/span[3]] (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-03DBQVL&apos;, ip: &apos;169.254.10.70&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\joga\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: d559f604113bae34d5199d31f5a55476</p>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\joga\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63211}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4abac421b63a1f3bc9e3f6d891bee778</p>
 org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 <br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-<br/>at com.OnlineTravel.Yatra_Auomation_01.Flight_Count(Yatra_Auomation_01.java:55)
+<br/>at com.OnlineTravel.Train.Train_Travel(Train.java:52)
 <br/>29 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h1>Train</h1>
 </body></html>

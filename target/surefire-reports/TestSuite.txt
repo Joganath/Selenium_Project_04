@@ -1,18 +1,18 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 102.988 s <<< FAILURE! - in TestSuite
-Singapore_malaysia(com.OnlineTravel.Cruise_Travel)  Time elapsed: 16.726 s  <<< FAILURE!
-java.lang.AssertionError: expected [21000] but found [20000]
-	at com.OnlineTravel.Cruise_Travel.Singapore_malaysia(Cruise_Travel.java:67)
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 106.721 s <<< FAILURE! - in TestSuite
+Cruise_Travel(com.OnlineTravel.Cruise_Travel)  Time elapsed: 1.664 s  <<< FAILURE!
+java.lang.AssertionError: expected [Cruise Offline Booking] but found [Cruise Online Booking]
+	at com.OnlineTravel.Cruise_Travel.Cruise_Travel(Cruise_Travel.java:51)
 
-Flight_Count(com.OnlineTravel.Yatra_Auomation_01)  Time elapsed: 11.213 s  <<< FAILURE!
+Train_Travel(com.OnlineTravel.Train)  Time elapsed: 17.606 s  <<< FAILURE!
 org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for text ('Kempegowda International') to be present in element [[ChromeDriver: chrome on XP (d559f604113bae34d5199d31f5a55476)] -> xpath: //*[text()='Indira Gandhi International']] (tried for 10 second(s) with 500 milliseconds interval)
+Expected condition failed: waiting for text ('BBS') to be present in element [[ChromeDriver: chrome on XP (4abac421b63a1f3bc9e3f6d891bee778)] -> xpath: //li[@class='active ac_over']/span[3]] (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-03DBQVL', ip: '169.254.10.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\joga\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: d559f604113bae34d5199d31f5a55476
-	at com.OnlineTravel.Yatra_Auomation_01.Flight_Count(Yatra_Auomation_01.java:55)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\joga\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63211}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4abac421b63a1f3bc9e3f6d891bee778
+	at com.OnlineTravel.Train.Train_Travel(Train.java:52)
 

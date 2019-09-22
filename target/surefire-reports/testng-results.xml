@@ -1,33 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="3" passed="1">
+<testng-results skipped="1" failed="2" total="4" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="100955" started-at="2019-09-17T03:02:24Z" finished-at="2019-09-17T03:04:05Z">
+  <suite name="Suite" duration-ms="104973" started-at="2019-09-22T15:35:27Z" finished-at="2019-09-22T15:37:12Z">
     <groups>
     </groups>
-    <test name="Cruise" duration-ms="46518" started-at="2019-09-17T03:02:24Z" finished-at="2019-09-17T03:03:11Z">
+    <test name="Cruise" duration-ms="30441" started-at="2019-09-22T15:35:27Z" finished-at="2019-09-22T15:35:58Z">
       <class name="com.OnlineTravel.Cruise_Travel">
-        <test-method status="PASS" signature="Opening_Page()[pri:0, instance:com.OnlineTravel.Cruise_Travel@2c6a3f77]" name="Opening_Page" is-config="true" duration-ms="23659" started-at="2019-09-17T08:32:24Z" finished-at="2019-09-17T08:32:48Z">
+        <test-method status="PASS" signature="Opening_Page()[pri:0, instance:com.OnlineTravel.Cruise_Travel@358ee631]" name="Opening_Page" is-config="true" duration-ms="24172" started-at="2019-09-22T21:05:27Z" finished-at="2019-09-22T21:05:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Opening_Page -->
-        <test-method status="PASS" signature="Cruise_Travel()[pri:0, instance:com.OnlineTravel.Cruise_Travel@2c6a3f77]" name="Cruise_Travel" duration-ms="1822" started-at="2019-09-17T08:32:48Z" finished-at="2019-09-17T08:32:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Cruise_Travel -->
-        <test-method status="FAIL" signature="Singapore_malaysia()[pri:0, instance:com.OnlineTravel.Cruise_Travel@2c6a3f77]" name="Singapore_malaysia" duration-ms="16722" started-at="2019-09-17T08:32:50Z" depends-on-methods="com.OnlineTravel.Cruise_Travel.Cruise_Travel" finished-at="2019-09-17T08:33:06Z">
+        <test-method status="FAIL" signature="Cruise_Travel()[pri:0, instance:com.OnlineTravel.Cruise_Travel@358ee631]" name="Cruise_Travel" duration-ms="1656" started-at="2019-09-22T21:05:52Z" finished-at="2019-09-22T21:05:53Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [21000] but found [20000]]]>
+              <![CDATA[expected [Cruise Offline Booking] but found [Cruise Online Booking]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [21000] but found [20000]
+              <![CDATA[java.lang.AssertionError: expected [Cruise Offline Booking] but found [Cruise Online Booking]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:370)
-	at org.testng.Assert.assertEquals(Assert.java:380)
-	at com.OnlineTravel.Cruise_Travel.Singapore_malaysia(Cruise_Travel.java:67)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.OnlineTravel.Cruise_Travel.Cruise_Travel(Cruise_Travel.java:51)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -61,39 +57,59 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- Cruise_Travel -->
+        <test-method status="SKIP" signature="Singapore_malaysia()[pri:0, instance:com.OnlineTravel.Cruise_Travel@358ee631]" name="Singapore_malaysia" duration-ms="0" started-at="2019-09-22T21:05:54Z" depends-on-methods="com.OnlineTravel.Cruise_Travel.Cruise_Travel" finished-at="2019-09-22T21:05:54Z">
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- Singapore_malaysia -->
-        <test-method status="PASS" signature="Closing_Browser()[pri:0, instance:com.OnlineTravel.Cruise_Travel@2c6a3f77]" name="Closing_Browser" is-config="true" duration-ms="4279" started-at="2019-09-17T08:33:07Z" finished-at="2019-09-17T08:33:11Z">
+        <test-method status="PASS" signature="Closing_Browser()[pri:0, instance:com.OnlineTravel.Cruise_Travel@358ee631]" name="Closing_Browser" is-config="true" duration-ms="4111" started-at="2019-09-22T21:05:54Z" finished-at="2019-09-22T21:05:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Closing_Browser -->
       </class> <!-- com.OnlineTravel.Cruise_Travel -->
     </test> <!-- Cruise -->
-    <test name="Flight" duration-ms="34657" started-at="2019-09-17T03:03:11Z" finished-at="2019-09-17T03:03:46Z">
+    <test name="Flight" duration-ms="40149" started-at="2019-09-22T15:35:58Z" finished-at="2019-09-22T15:36:38Z">
       <class name="com.OnlineTravel.Yatra_Auomation_01">
-        <test-method status="PASS" signature="Opening_Page()[pri:0, instance:com.OnlineTravel.Yatra_Auomation_01@2c9f9fb0]" name="Opening_Page" is-config="true" duration-ms="19230" started-at="2019-09-17T08:33:11Z" finished-at="2019-09-17T08:33:30Z">
+        <test-method status="PASS" signature="Opening_Page()[pri:0, instance:com.OnlineTravel.Yatra_Auomation_01@4df50bcc]" name="Opening_Page" is-config="true" duration-ms="21507" started-at="2019-09-22T21:05:58Z" finished-at="2019-09-22T21:06:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Opening_Page -->
-        <test-method status="FAIL" signature="Flight_Count()[pri:0, instance:com.OnlineTravel.Yatra_Auomation_01@2c9f9fb0]" name="Flight_Count" duration-ms="11209" started-at="2019-09-17T08:33:30Z" finished-at="2019-09-17T08:33:41Z">
+        <test-method status="PASS" signature="Flight_Count()[pri:0, instance:com.OnlineTravel.Yatra_Auomation_01@4df50bcc]" name="Flight_Count" duration-ms="18493" started-at="2019-09-22T21:06:19Z" finished-at="2019-09-22T21:06:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Flight_Count -->
+        <test-method status="PASS" signature="Browser_Close()[pri:0, instance:com.OnlineTravel.Yatra_Auomation_01@4df50bcc]" name="Browser_Close" is-config="true" duration-ms="149" started-at="2019-09-22T21:06:38Z" finished-at="2019-09-22T21:06:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Browser_Close -->
+      </class> <!-- com.OnlineTravel.Yatra_Auomation_01 -->
+    </test> <!-- Flight -->
+    <test name="Train" duration-ms="34226" started-at="2019-09-22T15:36:38Z" finished-at="2019-09-22T15:37:12Z">
+      <class name="com.OnlineTravel.Train">
+        <test-method status="PASS" signature="Opening_Page()[pri:0, instance:com.OnlineTravel.Train@43301423]" name="Opening_Page" is-config="true" duration-ms="15909" started-at="2019-09-22T21:06:38Z" finished-at="2019-09-22T21:06:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Opening_Page -->
+        <test-method status="FAIL" signature="Train_Travel()[pri:0, instance:com.OnlineTravel.Train@43301423]" name="Train_Travel" duration-ms="17599" started-at="2019-09-22T21:06:54Z" finished-at="2019-09-22T21:07:12Z">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for text ('Kempegowda International') to be present in element [[ChromeDriver: chrome on XP (d559f604113bae34d5199d31f5a55476)] -> xpath: //*[text()='Indira Gandhi International']] (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for text ('BBS') to be present in element [[ChromeDriver: chrome on XP (4abac421b63a1f3bc9e3f6d891bee778)] -> xpath: //li[@class='active ac_over']/span[3]] (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-03DBQVL', ip: '169.254.10.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\joga\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: d559f604113bae34d5199d31f5a55476]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\joga\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63211}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4abac421b63a1f3bc9e3f6d891bee778]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text ('Kempegowda International') to be present in element [[ChromeDriver: chrome on XP (d559f604113bae34d5199d31f5a55476)] -> xpath: //*[text()='Indira Gandhi International']] (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text ('BBS') to be present in element [[ChromeDriver: chrome on XP (4abac421b63a1f3bc9e3f6d891bee778)] -> xpath: //li[@class='active ac_over']/span[3]] (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-03DBQVL', ip: '169.254.10.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\joga\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: d559f604113bae34d5199d31f5a55476
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\joga\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63211}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4abac421b63a1f3bc9e3f6d891bee778
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.OnlineTravel.Yatra_Auomation_01.Flight_Count(Yatra_Auomation_01.java:55)
+	at com.OnlineTravel.Train.Train_Travel(Train.java:52)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -127,19 +143,7 @@ Session ID: d559f604113bae34d5199d31f5a55476
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Flight_Count -->
-        <test-method status="PASS" signature="Browser_Close()[pri:0, instance:com.OnlineTravel.Yatra_Auomation_01@2c9f9fb0]" name="Browser_Close" is-config="true" duration-ms="4209" started-at="2019-09-17T08:33:41Z" finished-at="2019-09-17T08:33:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Browser_Close -->
-      </class> <!-- com.OnlineTravel.Yatra_Auomation_01 -->
-    </test> <!-- Flight -->
-    <test name="Train" duration-ms="19565" started-at="2019-09-17T03:03:46Z" finished-at="2019-09-17T03:04:05Z">
-      <class name="com.OnlineTravel.Train">
-        <test-method status="PASS" signature="Opening_Page()[pri:0, instance:com.OnlineTravel.Train@2cb4c3ab]" name="Opening_Page" is-config="true" duration-ms="19565" started-at="2019-09-17T08:33:46Z" finished-at="2019-09-17T08:34:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Opening_Page -->
+        </test-method> <!-- Train_Travel -->
       </class> <!-- com.OnlineTravel.Train -->
     </test> <!-- Train -->
   </suite> <!-- Suite -->
