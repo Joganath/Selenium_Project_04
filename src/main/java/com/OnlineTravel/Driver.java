@@ -72,7 +72,7 @@ public class Driver {
 
     public WebDriverWait Add_Wait()
     {
-    	Wait = new WebDriverWait(driver,10);
+    	Wait = new WebDriverWait(driver,20);
     	return Wait;
     }
 
