@@ -4,16 +4,15 @@
   <listeners>
     <listener class-name="com.OnlineTravel.Listener"/>
   </listeners>
-  <test thread-count="5" name="Cruise(failed)">
+  <test thread-count="5" name="Crick(failed)">
     <classes>
-      <class name="com.OnlineTravel.Cruise_Travel">
+      <class name="Crickbuzz.Crickbuzz1">
         <methods>
-          <include name="Cruise_Travel"/>
-          <include name="Singapore_malaysia"/>
+          <include name="Browser_Close"/>
           <include name="Opening_Page"/>
-          <include name="Closing_Browser"/>
+          <include name="Scoreboard"/>
         </methods>
-      </class> <!-- com.OnlineTravel.Cruise_Travel -->
+      </class> <!-- Crickbuzz.Crickbuzz1 -->
     </classes>
-  </test> <!-- Cruise(failed) -->
+  </test> <!-- Crick(failed) -->
 </suite> <!-- Failed suite [Suite] -->

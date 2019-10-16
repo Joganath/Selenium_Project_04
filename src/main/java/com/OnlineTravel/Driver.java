@@ -38,7 +38,7 @@ public class Driver {
     	FileInputStream fis = new FileInputStream("D:\\Selenium_Automation\\WebUIAutomation\\Conf_Details.properties");
     	Prop = new Properties();
     	Prop.load(fis);
-    	System.out.println(Prop.getProperty("Browser")+"It is Running");
+    	System.out.println(Prop.getProperty("Browser")+" Is Running");
     	
     	if (Prop.getProperty("Browser").equalsIgnoreCase("Firefox"))
     			{
@@ -95,14 +95,14 @@ public class Driver {
 			System.out.println("Driver is not null");
 	}
 	  Date Dt = new Date();
-	  SimpleDateFormat Formatter = new SimpleDateFormat("yyyy-MM-dd");
+	  SimpleDateFormat Formatter = new SimpleDateFormat("yyyy-MM-dd hh_mm_ss");
 	  String StrDT= Formatter.format(Dt);
 	  
 	  
 	  System.out.println("Today is"+StrDT);
 	  
 	  File Scrn = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-    FileUtils.copyFile(Scrn,new File("D:\\Selenium_Automation\\Screenshots\\"+result+StrDT+"Screenshot.jpeg"));
+    FileUtils.copyFile(Scrn,new File("D:\\Selenium_Automation\\Screenshots\\"+result+StrDT+".jpeg"));
     
   }
 

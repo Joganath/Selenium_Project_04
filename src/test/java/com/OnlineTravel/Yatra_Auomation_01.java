@@ -20,13 +20,7 @@ import Page_Objects.Home_Page;
 public class Yatra_Auomation_01 extends com.OnlineTravel.Driver
 {
     
-    	
-     
-   
-	
-	
-
-	@BeforeTest
+    @BeforeTest(enabled=false)
 	public void Opening_Page() throws IOException
 	{
 	 System.out.println("Before Test is running");
@@ -37,14 +31,14 @@ public class Yatra_Auomation_01 extends com.OnlineTravel.Driver
 			 
 	}
 	
-	@AfterTest
+	@AfterTest(enabled=false)
 	public void Browser_Close()
 	{
 		driver.close();
 		driver =null;
 	}
 	
-	@Test
+	@Test(enabled=false)
 	public void Flight_Count() throws IOException, InterruptedException
 	{
 		

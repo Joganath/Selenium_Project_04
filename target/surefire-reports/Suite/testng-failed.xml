@@ -8,6 +8,7 @@
     <classes>
       <class name="com.OnlineTravel.Train">
         <methods>
+          <include name="Closing_Page"/>
           <include name="Opening_Page"/>
         </methods>
       </class> <!-- com.OnlineTravel.Train -->
@@ -27,11 +28,35 @@
       </class> <!-- com.OnlineTravel.Cruise_Travel -->
     </classes>
   </test> <!-- Cruise(failed) -->
+  <test name="Flight(failed)">
+    <classes>
+      <class name="com.OnlineTravel.Train">
+        <methods>
+          <include name="Closing_Page"/>
+          <include name="Opening_Page"/>
+        </methods>
+      </class> <!-- com.OnlineTravel.Train -->
+      <class name="com.OnlineTravel.Yatra_Auomation_01">
+        <methods>
+          <include name="Opening_Page"/>
+          <include name="Browser_Close"/>
+          <include name="Flight_Count"/>
+        </methods>
+      </class> <!-- com.OnlineTravel.Yatra_Auomation_01 -->
+      <class name="com.OnlineTravel.Cruise_Travel">
+        <methods>
+          <include name="Opening_Page"/>
+          <include name="Closing_Browser"/>
+        </methods>
+      </class> <!-- com.OnlineTravel.Cruise_Travel -->
+    </classes>
+  </test> <!-- Flight(failed) -->
   <test name="Train(failed)">
     <classes>
       <class name="com.OnlineTravel.Train">
         <methods>
           <include name="Train_Travel"/>
+          <include name="Closing_Page"/>
           <include name="Opening_Page"/>
         </methods>
       </class> <!-- com.OnlineTravel.Train -->

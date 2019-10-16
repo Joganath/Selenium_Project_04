@@ -20,4 +20,9 @@
       <class name = "com.OnlineTravel.Train"/>
     </classes>
    </test>
+   <test name="Crick">
+   <classes>
+   <class name="Crickbuzz.Crickbuzz1"/>
+   </classes>
+   </test>
    </suite> <!-- Suite -->

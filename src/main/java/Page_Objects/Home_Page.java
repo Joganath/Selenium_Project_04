@@ -22,7 +22,7 @@ public class Home_Page {
 	By Flight_Count = By.xpath("//span[@class='dstp']");
 	//Cruise
 	By Cruise_Travel = By.xpath("//a[@id='booking_engine_cruise']/span");
-	By River = By.xpath("//div[@class='multiselect__tags']/span");
+	By River = By.xpath("//span[@class='multiselect__placeholder']");
 	By Heading = By.cssSelector("span[class='main-heading']");
 	By Singapore_Malaysia_Cruise = By.xpath("//a[@title='SINGAPORE MALAYSIA DREAM CRUISE ']/div/img");
 	By Heading2 = By.cssSelector("h2[class='ng-binding']");

@@ -13,7 +13,7 @@ import Page_Objects.Home_Page;
 
 public class Train extends Driver {
 
-@BeforeTest
+@BeforeTest(enabled=false)
 public void Opening_Page() throws IOException 
 {
 	driver=initializeDriver();
@@ -23,14 +23,14 @@ public void Opening_Page() throws IOException
 
 }
 
-/*@AfterTest
+@AfterTest(enabled=false)
 public void Closing_Page()
 {
    driver.close();
    driver=null;
-}*/
+}
 
-@Test
+@Test(enabled=false)
 public void Train_Travel() throws InterruptedException
 {
 	Home_Page HP = new Home_Page(driver);
